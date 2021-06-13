@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">    
+            <h1>Algorithm Visualizer</h1>
+        </div>
+        <div class="navbar">
+            <div class="Arraybtn">
+                <button id="Array" class="new_btn1">New Array</button> 
+            </div>
+            <div class="ranges">
+                <span class="first">
+                    <label for="arr_sz">Number of Bars</label>
+                    <input id="arr_sz" type="range"  min="20" max="100" step=1 >
+                </span> 
+                <span class="second">
+                    <label for="speed">Speed</label>
+                    <input id="speed" type="range"  min="0" max="500" step=50 >
+                </span> 
+            </div>
+            <div class="sortings">
+                <button id="Bubble" class="new_btn">Bubble Sort</button>
+                <button id="Selection" class="new_btn">Selection Sort</button>
+                <button id="Insertion" class="new_btn">Insertion Sort</button>
+            </div>
+        </div>
+        <div class="bar" id="bars">
+        </div>
+        <div class="info">    
+            <p>For new Sorting Refresh the page!</p>
+        </div>
+    </div>
+    <script src="jsfiles/bubble.js"></script>
+    <script src="jsfiles/selection.js"></script>
+    <script src="jsfiles/insertion.js"></script>
+  
+
+
+</body>
+
+</html>
